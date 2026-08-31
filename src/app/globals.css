@@ -1,0 +1,2 @@
+@import "tailwindcss";
+:root{--navy:#071c36;--teal:#1dd1c1;--cream:#f4f1e8;--orange:#ffb524}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:#0b1d35;font-family:Arial,"Noto Sans Thai",sans-serif}button,input,select{font:inherit}button{cursor:pointer}.mono{font-family:ui-monospace,Consolas,monospace}.glass{box-shadow:0 24px 70px #071c3620}.choice.active{outline:4px solid #1dd1c155;transform:translateY(-3px)}.score-ring{background:conic-gradient(var(--teal) var(--score),#dce6e3 0)}
