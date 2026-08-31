@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071c36" />
+  <meta name="description" content="เว็บแอปเรียนรู้ แปลงค่า และฝึกทำโจทย์เลขฐาน 2–36" />
+  <title>BaseLab — ห้องทดลองเลขฐาน</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="home.html" aria-label="BaseLab หน้าแรก"><span class="brand-mark">B</span><span>BASE<span>LAB</span></span></a>
+    <nav aria-label="เมนูหลัก">
+      <a class="nav-link" href="home.html">หน้าแรก</a>
+      <a class="nav-link" href="learn.html">เรียน</a>
+      <a class="nav-link" href="practice.html">ฝึก</a>
+      <a class="nav-link" href="exam.html">โจทย์จริง</a>
+      <a class="nav-link active" href="index.html">คำนวณ</a>
+      <a class="nav-link" href="score.html">คะแนน</a>
+    </nav>
+    <div class="maker"><span>จัดทำโดย</span><strong>นางสาวทิฆัมพร มีหิรัญ</strong></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">NUMBER SYSTEM STUDIO</p>
+        <h1>เปลี่ยนเลขฐาน<br><span>ให้เป็นเรื่องเข้าใจง่าย</span></h1>
+        <p class="hero-copy">เครื่องคำนวณอัตโนมัติสำหรับฐาน 2, 6, 8, 10 และ 16<br>ตรวจค่าได้รวดเร็วหลังเรียนและทำโจทย์</p>
+      </div>
+      <div class="binary-art" aria-hidden="true">
+        <span class="b1">10110</span><span class="b2">01101</span><span class="b3">110</span>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section id="converter" class="workspace card">
+      <div class="section-heading">
+        <div><p class="kicker">CONVERTER</p><h2>เครื่องคำนวณเลขฐาน</h2></div>
+        <span class="status"><i></i> พร้อมใช้งาน</span>
+      </div>
+
+      <div class="converter-grid">
+        <div class="input-panel">
+          <label for="numberInput">ค่าที่ต้องการคำนวณ</label>
+          <input id="numberInput" value="10110" autocomplete="off" spellcheck="false" aria-describedby="inputHelp errorText" />
+          <p id="inputHelp" class="hint">ใช้ตัวเลข 0–9 และตัวอักษร A–Z</p>
+          <p id="errorText" class="error" role="alert"></p>
+          <div class="base-row">
+            <label>จากฐาน
+              <select id="fromBase" aria-label="เลขฐานต้นทาง"></select>
+            </label>
+            <button id="swapBtn" class="swap" aria-label="สลับเลขฐาน">⇄</button>
+            <label>เป็นฐาน
+              <select id="toBase" aria-label="เลขฐานปลายทาง"></select>
+            </label>
+          </div>
+          <button id="convertBtn" class="primary">แปลงค่า <span>→</span></button>
+        </div>
+
+        <div class="result-panel">
+          <p class="result-label">ผลลัพธ์</p>
+          <div class="result-line"><output id="resultValue">22</output><button id="copyBtn" title="คัดลอกผลลัพธ์" aria-label="คัดลอกผลลัพธ์">□</button></div>
+          <p id="resultMeta">10110<sub>2</sub> = 22<sub>10</sub></p>
+          <div class="quick-results">
+            <div><span>ฐาน 2</span><strong id="quick2">10110</strong></div>
+            <div><span>ฐาน 8</span><strong id="quick8">26</strong></div>
+            <div><span>ฐาน 10</span><strong id="quick10">22</strong></div>
+            <div><span>ฐาน 16</span><strong id="quick16">16</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="learn-section">
+      <div class="section-heading"><div><p class="kicker">EXPLORE BASELAB</p><h2>เรียนให้เข้าใจ แล้วลองทำจริง</h2></div></div>
+      <div class="feature-links">
+        <a href="learn.html"><b>01</b><span>เรียนรู้ก่อน<small>ทำความเข้าใจหลักการและตัวอย่าง</small></span><i>→</i></a>
+        <a href="index.html"><b>02</b><span>ทดลองคำนวณ<small>แปลงค่าเลขฐาน 2–36</small></span><i>→</i></a>
+        <a href="practice.html"><b>03</b><span>ทำแบบฝึกหัด<small>เลือกระดับและสุ่มคำถาม</small></span><i>→</i></a>
+        <a href="score.html"><b>04</b><span>ดูคะแนน<small>ตรวจผลและติดตามความแม่นยำ</small></span><i>→</i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>BASELAB</strong><p>เว็บแอปสำหรับเรียนรู้ระบบเลขฐาน</p></div>
+    <div class="student"><span>ผู้จัดทำ</span><strong>นางสาวทิฆัมพร มีหิรัญ</strong><em>056860405627-1</em></div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
+
+

@@ -1,2 +1,5 @@
-import BaseLabApp from "@/components/BaseLabApp";
-export default function Home(){return <BaseLabApp/>}
+import { redirect } from "next/navigation";
+
+export default function Home() {
+  redirect("/site/home.html");
+}
