@@ -20,12 +20,12 @@ export default function Basics({ go }: { go: (tab: "learn") => void }) {
       <h2 className="mt-2 text-2xl font-black">แต่ละฐานประกอบด้วยตัวอะไรบ้าง?</h2>
       <p className="mt-2 text-slate-500">ฐานบอกจำนวนสัญลักษณ์ที่ใช้ได้ เริ่มนับจาก 0 และตัวเลขทุกตัวต้องมีค่าน้อยกว่าฐาน</p>
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-        {bases.map(item => <article key={item.base} className="rounded-xl border border-slate-200 bg-slate-50 p-5 hover:-translate-y-1 hover:border-[#1dd1c1]">
+        {bases.map(item => <article key={item.base} className="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50 p-5 hover:-translate-y-1 hover:border-[#1dd1c1]">
           <span className="font-mono text-xs text-[#008f86]">BASE {item.base}</span>
           <h3 className="mt-1 text-xl font-black">ฐาน {item.base}</h3>
           <p className="mt-4 text-xs text-slate-500">สัญลักษณ์ที่ใช้ได้</p>
           <p className="mt-1 break-words font-mono font-bold text-[#007b73]">{item.digits}</p>
-          <p className="mt-4 text-xs font-bold text-slate-500">ตัวอย่างการเขียน</p>
+          <p className="mt-auto pt-5 text-xs font-bold text-slate-500">ตัวอย่างการเขียน</p>
           <div className="mt-1 rounded-lg bg-[#071c36] p-3 text-center font-mono text-white">{item.example}</div>
         </article>)}
       </div>
