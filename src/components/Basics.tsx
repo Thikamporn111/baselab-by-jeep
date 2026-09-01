@@ -1,11 +1,11 @@
 "use client";
 
 const bases = [
-  { base: 2, digits: "0, 1", use: "คอมพิวเตอร์และวงจรดิจิทัล", example: "1011₂" },
-  { base: 6, digits: "0, 1, 2, 3, 4, 5", use: "แบบฝึกการนับและการแปลงฐาน", example: "153₆" },
-  { base: 8, digits: "0, 1, 2, 3, 4, 5, 6, 7", use: "ย่อเลขฐาน 2 ครั้งละ 3 บิต", example: "247₈" },
-  { base: 10, digits: "0, 1, 2, 3, 4, 5, 6, 7, 8, 9", use: "ตัวเลขที่เราใช้ในชีวิตประจำวัน", example: "156₁₀" },
-  { base: 16, digits: "0–9 และ A, B, C, D, E, F", use: "สีบนเว็บไซต์และข้อมูลคอมพิวเตอร์", example: "AF₁₆" },
+  { base: 2, digits: "0, 1", example: "1011₂" },
+  { base: 6, digits: "0, 1, 2, 3, 4, 5", example: "153₆" },
+  { base: 8, digits: "0, 1, 2, 3, 4, 5, 6, 7", example: "247₈" },
+  { base: 10, digits: "0, 1, 2, 3, 4, 5, 6, 7, 8, 9", example: "156₁₀" },
+  { base: 16, digits: "0–9 และ A, B, C, D, E, F", example: "AF₁₆" },
 ];
 
 export default function Basics({ go }: { go: (tab: "learn") => void }) {
@@ -25,7 +25,6 @@ export default function Basics({ go }: { go: (tab: "learn") => void }) {
           <h3 className="mt-1 text-xl font-black">ฐาน {item.base}</h3>
           <p className="mt-4 text-xs text-slate-500">สัญลักษณ์ที่ใช้ได้</p>
           <p className="mt-1 break-words font-mono font-bold text-[#007b73]">{item.digits}</p>
-          <p className="mt-4 text-xs leading-5 text-slate-500">{item.use}</p>
           <p className="mt-4 text-xs font-bold text-slate-500">ตัวอย่างการเขียน</p>
           <div className="mt-1 rounded-lg bg-[#071c36] p-3 text-center font-mono text-white">{item.example}</div>
         </article>)}
