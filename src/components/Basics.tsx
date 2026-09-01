@@ -30,16 +30,16 @@ export default function Basics({ go }: { go: (tab: "learn") => void }) {
           <div className="mt-1 rounded-lg bg-[#071c36] p-3 text-center font-mono text-white">{item.example}</div>
         </article>)}
       </div>
-      <section className="mt-7 rounded-xl border border-sky-200 bg-sky-50 p-5">
+      <section className="mt-7 rounded-xl border border-[#a9ddd6] bg-[#e9f8f5] p-5">
         <h3 className="font-bold">เลขตัวเล็กด้านล่างมาจากไหน?</h3>
         <p className="mt-2 text-sm leading-6 text-slate-600"><b>156₁₀ ไม่ได้มาจากการคำนวณข้อก่อนหน้า</b> แต่เป็นตัวอย่างการเขียนเลข 156 ในระบบฐาน 10 โดยเลขตัวเล็ก ₁₀ ใช้บอกว่าเลขข้างหน้าเป็น “ฐาน 10” ไม่ใช่เลขยกกำลัง เช่น 1011₂ อ่านว่า 1011 ฐาน 2 และ AF₁₆ อ่านว่า AF ฐาน 16</p>
       </section>
       <section className="mt-7 grid gap-4 md:grid-cols-2">
-        <div className="rounded-xl border-l-4 border-amber-400 bg-amber-50 p-5">
+        <div className="rounded-xl border-l-4 border-[#ffb524] bg-[#fff6df] p-5">
           <h3 className="font-bold">กฎสำคัญ</h3>
           <p className="mt-2 text-sm leading-6 text-slate-600">ตัวเลขต้องน้อยกว่าฐาน เช่น ฐาน 6 ใช้ได้แค่ 0–5 ดังนั้น 126₆ เขียนไม่ได้ เพราะมีเลข 6 อยู่ในจำนวน</p>
         </div>
-        <div className="rounded-xl border-l-4 border-[#1dd1c1] bg-emerald-50 p-5">
+        <div className="rounded-xl border-l-4 border-[#1dd1c1] bg-[#e9f8f5] p-5">
           <h3 className="font-bold">ตัวอักษรในฐาน 16</h3>
           <p className="mt-2 text-sm leading-6 text-slate-600">เมื่อเลข 0–9 ไม่พอ จึงใช้ A=10, B=11, C=12, D=13, E=14 และ F=15</p>
         </div>
