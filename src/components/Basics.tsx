@@ -26,9 +26,14 @@ export default function Basics({ go }: { go: (tab: "learn") => void }) {
           <p className="mt-4 text-xs text-slate-500">สัญลักษณ์ที่ใช้ได้</p>
           <p className="mt-1 break-words font-mono font-bold text-[#007b73]">{item.digits}</p>
           <p className="mt-4 text-xs leading-5 text-slate-500">{item.use}</p>
-          <div className="mt-4 rounded-lg bg-[#071c36] p-3 text-center font-mono text-white">{item.example}</div>
+          <p className="mt-4 text-xs font-bold text-slate-500">ตัวอย่างการเขียน</p>
+          <div className="mt-1 rounded-lg bg-[#071c36] p-3 text-center font-mono text-white">{item.example}</div>
         </article>)}
       </div>
+      <section className="mt-7 rounded-xl border border-sky-200 bg-sky-50 p-5">
+        <h3 className="font-bold">เลขตัวเล็กด้านล่างมาจากไหน?</h3>
+        <p className="mt-2 text-sm leading-6 text-slate-600"><b>156₁₀ ไม่ได้มาจากการคำนวณข้อก่อนหน้า</b> แต่เป็นตัวอย่างการเขียนเลข 156 ในระบบฐาน 10 โดยเลขตัวเล็ก ₁₀ ใช้บอกว่าเลขข้างหน้าเป็น “ฐาน 10” ไม่ใช่เลขยกกำลัง เช่น 1011₂ อ่านว่า 1011 ฐาน 2 และ AF₁₆ อ่านว่า AF ฐาน 16</p>
+      </section>
       <section className="mt-7 grid gap-4 md:grid-cols-2">
         <div className="rounded-xl border-l-4 border-amber-400 bg-amber-50 p-5">
           <h3 className="font-bold">กฎสำคัญ</h3>
