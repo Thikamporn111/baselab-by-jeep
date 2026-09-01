@@ -10,10 +10,12 @@ const bases = [
 
 export default function Basics({ go }: { go: (tab: "learn") => void }) {
   return <>
-    <section className="bg-[#071c36] px-[8vw] py-16 text-white">
-      <p className="font-mono text-xs tracking-[.25em] text-[#1dd1c1]">NUMBER BASE BASICS</p>
-      <h1 className="mt-4 text-4xl font-black md:text-6xl">เรียนพื้นฐานเลขฐาน</h1>
-      <p className="mt-4 text-slate-400">รู้จักสัญลักษณ์และกฎของแต่ละฐาน ก่อนเริ่มเรียนวิธีแปลง</p>
+    <section className="bg-[#071c36] px-5 py-14 text-white md:py-16">
+      <div className="mx-auto w-full max-w-6xl">
+        <p className="font-mono text-xs tracking-[.25em] text-[#1dd1c1]">NUMBER BASE BASICS</p>
+        <h1 className="mt-4 text-4xl font-black md:text-6xl">เรียนพื้นฐานเลขฐาน</h1>
+        <p className="mt-4 max-w-3xl text-slate-400">รู้จักสัญลักษณ์และกฎของแต่ละฐาน ก่อนเริ่มเรียนวิธีแปลง</p>
+      </div>
     </section>
     <main className="glass mx-auto -mt-8 mb-20 max-w-6xl rounded-xl bg-white p-6 md:p-10">
       <p className="font-mono text-xs tracking-widest text-[#008f86]">DIGITS IN EACH BASE</p>
